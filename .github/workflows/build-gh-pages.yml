@@ -1,0 +1,12 @@
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs: 
+  publish-gh-pages:
+    name: "Publish GitHub pages"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
